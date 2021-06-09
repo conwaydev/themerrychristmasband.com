@@ -1,0 +1,44 @@
+body {
+  background-image: url(https://media0.giphy.com/media/BlLuYG8dc5Ais/giphy.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  animation: changebg 5s infinite linear;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin: 0;
+  animation: spin 9s infinite linear;
+}
+@keyframes changebg {
+  from {
+    background-color: salmon;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+pre {
+  display: block;
+  flex: none;
+  overflow: auto;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li + li {
+  margin-left: 10px;
+}
