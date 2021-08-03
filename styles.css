@@ -11,7 +11,6 @@ body {
     color: #e1e1e1;
 }
 
-h1,
 h2,
 h3 {
     font-weight: normal;
@@ -37,11 +36,13 @@ img {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .nav ul li {
     display: block;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .nav ul li a {
@@ -53,29 +54,33 @@ img {
 @media screen and (min-width: 59rem) {
     .albums,
     .shows {
-        margin-top: 20px;
         display: flex;
         gap: 20px;
     }
     .albums > div {
         max-width: 33.3%;
+        margin-top: 0;
     }
     .shows > a {
         max-width: 50%;
+        margin-top: 0;
     }
 }
 
-.albums > div {
-    margin: 0 auto;
+.albums > div,
+.shows > a {
+    display: block;
+    margin: 20px auto;
 }
 
 main,
-nav,
-section + section {
+section + section,
+.albums,
+.shows {
     margin-top: 20px;
 }
 
 .ddt {
-    opacity: 50%;
+    opacity: 90%;
     margin-top: 80px;
 }
