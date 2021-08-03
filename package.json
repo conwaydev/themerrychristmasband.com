@@ -1,0 +1,14 @@
+{
+  "name": "themerrychristmasband.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:conwaydev/themerrychristmasband.com.git",
+  "author": "Justin Conway <justin@conwaydev.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "start": "live-server ."
+  }
+}
