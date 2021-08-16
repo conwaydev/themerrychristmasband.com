@@ -11,6 +11,18 @@ body {
     color: #e1e1e1;
 }
 
+a {
+    border: 3px solid transparent;
+}
+
+a img {
+    object-fit: fill;
+}
+
+a:hover {
+    border-color: #fff;
+}
+
 h2,
 h3 {
     font-weight: normal;
@@ -29,7 +41,7 @@ img {
 
 .logo {
     display: block;
-    max-width: 25%;
+    opacity: 90%;
 }
 
 .nav ul {
@@ -49,12 +61,14 @@ img {
     display: block;
     background: #e1e1e1;
     padding: 10px;
+    opacity: 90%;
 }
 
 @media screen and (min-width: 59rem) {
     .albums,
     .shows {
         display: flex;
+        align-items: center;
         gap: 20px;
     }
     .albums > div {
