@@ -68,11 +68,12 @@ img {
     .albums,
     .shows {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 20px;
     }
     .albums > div {
-        max-width: 25%;
+        max-width: 50%;
         margin-top: 0;
     }
     .shows > a {
