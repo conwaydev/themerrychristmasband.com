@@ -61,7 +61,6 @@ img {
     display: block;
     background: #e1e1e1;
     padding: 10px;
-    opacity: 90%;
 }
 
 @media screen and (min-width: 59rem) {
@@ -73,8 +72,9 @@ img {
         gap: 20px;
     }
     .albums > div {
-        max-width: 50%;
+        max-width: calc(50% - 20px);
         margin-top: 0;
+        width: 100%;
     }
     .shows > a {
         max-width: 50%;
